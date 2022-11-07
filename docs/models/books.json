@@ -1,0 +1,52 @@
+{
+  "id": "fN9JtGKvLqVAE6HljwUk",
+  "name": "Books",
+  "description": "Read anything good lately?",
+  "options": {
+    "singleField": false,
+    "aggregation": "none",
+    "limit": "none",
+    "reminders": []
+  },
+  "fields": [
+    {
+      "name": "Title",
+      "widget": { "type": "Text" },
+      "showOnList": true
+    },
+    {
+      "name": "Author",
+      "widget": { "type": "Text" },
+      "showOnList": true
+    },
+    {
+      "name": "Rating",
+      "widget": {
+        "type": "Slider",
+        "max": 5,
+        "maxLabel": "Excellent",
+        "minLabel": "Terrible"
+      }
+    },
+    { "name": "Read", "widget": { "type": "DateRange" } },
+    {
+      "name": "Format",
+      "widget": {
+        "type": "Radio",
+        "stringDefault": "Print",
+        "options": [
+          { "value": "Audiobook", "type": "String" },
+          { "value": "Print", "type": "String" }
+        ]
+      }
+    },
+    {
+      "name": "Notes",
+      "widget": { "type": "MultilineText" }
+    },
+    {
+      "name": "Timestamp",
+      "widget": { "type": "Timestamp" }
+    }
+  ]
+}

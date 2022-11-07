@@ -1,0 +1,36 @@
+{
+  "id": "Uf43GOjnCmksLlI6RaqF",
+  "name": "Sleep",
+  "description": "Duration and quality.",
+  "options": {
+    "singleField": false,
+    "aggregation": "none",
+    "limit": "daily",
+    "reminders": []
+  },
+  "fields": [
+    {
+      "name": "Quality",
+      "widget": {
+        "type": "Slider",
+        "maxLabel": "Excellent",
+        "minLabel": "Terrible"
+      },
+      "showOnList": true
+    },
+    {
+      "name": "Date",
+      "widget": { "type": "Date" },
+      "showOnList": true
+    },
+    {
+      "name": "Hours",
+      "widget": {
+        "type": "NumberInput",
+        "numericDefault": 7,
+        "isRequired": true
+      },
+      "showOnList": true
+    }
+  ]
+}

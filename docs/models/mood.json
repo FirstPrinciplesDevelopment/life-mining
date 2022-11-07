@@ -1,0 +1,65 @@
+{
+  "id": "SAzZV8ZAgUBQAB3mzIgh",
+  "name": "Mood",
+  "description": "How are you feeling?",
+  "options": {
+    "singleField": false,
+    "aggregation": "none",
+    "limit": "none",
+    "reminders": [{ "dayOfWeek": "Saturday", "timeOfDay": 360 }]
+  },
+  "fields": [
+    {
+      "name": "Mood",
+      "widget": {
+        "type": "Select",
+        "stringDefault": "Happy",
+        "options": [
+          { "value": "Happy" },
+          { "value": "Sad" },
+          { "value": "Anxious" },
+          { "value": "Excited" }
+        ]
+      },
+      "showOnList": true
+    },
+    {
+      "name": "Alertness",
+      "widget": { "type": "Slider", "maxLabel": "High", "minLabel": "Low" }
+    },
+    {
+      "name": "Valance",
+      "widget": {
+        "type": "Slider",
+        "maxLabel": "Positive",
+        "minLabel": "Negative"
+      }
+    },
+    {
+      "name": "Datetime",
+      "widget": { "type": "DateTime" },
+      "showOnList": true
+    },
+    {
+      "name": "Notes",
+      "widget": { "type": "MultilineText" }
+    },
+    {
+      "name": "Timestamp",
+      "widget": { "type": "Timestamp" }
+    },
+    {
+      "name": "Duration",
+      "widget": {
+        "type": "ElapsedTime",
+        "numericDefault": 30,
+        "stringDefault": "Minutes",
+        "options": [
+          { "value": "Seconds" },
+          { "value": "Minutes" },
+          { "value": "Hours" }
+        ]
+      }
+    }
+  ]
+}

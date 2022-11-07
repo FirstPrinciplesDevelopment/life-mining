@@ -1,0 +1,27 @@
+{
+  "id": "SIaOPL6MaLD3cb9EJwGM",
+  "name": "Medicine",
+  "description": "Medication, dose, time.",
+  "options": {
+    "singleField": false,
+    "aggregation": "none",
+    "limit": "none",
+    "reminders": []
+  },
+  "fields": [
+    {
+      "name": "Medication",
+      "widget": { "type": "Text", "isRequired": true, "maxLength": 100 },
+      "showOnList": true
+    },
+    {
+      "name": "Dosage",
+      "widget": { "type": "Text", "maxLength": 100 }
+    },
+    {
+      "name": "Time Taken",
+      "widget": { "type": "DateTime", "isRequired": true },
+      "showOnList": true
+    }
+  ]
+}
